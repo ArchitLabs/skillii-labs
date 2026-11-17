@@ -1,4 +1,6 @@
-# 01 — How LLM pricing works: input vs output tokens
+# How LLM Pricing Works: Input vs Output Tokens
+
+Course: AI Foundation · Section: Calling a model: tokens, window and cost
 
 The labs from the SKILLii lesson video *How LLM Pricing Works: Input vs Output Tokens*.
 Prices in `prices.py` are Claude Opus 5.5's, as of November 2026 — [check the pricing page](https://platform.claude.com/docs/en/about-claude/pricing) before relying on them.
