@@ -47,23 +47,23 @@ One run cost $0.004192 at the prices in the code.
 <!-- /skillii-kit:run draft -->
 
 <!-- skillii-kit:run act -->
-Recorded run of `python act.py` (20 Nov 2026):
+Recorded run of `python act.py` (22 Nov 2026):
 
 ```text
 step 1: get_order {"order_id": "4417"}
         -> {"order_id": "4417", "item": "linen shirt, size M", "delivered_days_ago": 6}
 step 2: create_return {"order_id": "4417", "reason": "Doesn't fit"}
         -> {"return_id": "R-4417", "label": "ready to print"}
-step 3: email_customer {"order_id": "4417", "text": "Hi! We've opened your return for [...]
+step 3: email_customer {"order_id": "4417", "text": "Hi! We've opened a free return for [...]
         -> {"sent": true}
 step 4: done
-        I've started your return. Your linen shirt (size M) arrived 6 days ago, which is
-        well inside our 30-day free return window.  - **Return ID:** R-4417 - **Return
-        label:** Ready to print. Print it, attach it to the package and send the shirt
-        back to us. - **Cost:** Free  I've also emailed you these details. If you'd like
-        a different size instead, just let me know.
-cost: $0.020504
+        Yes, you can send it back. Your linen shirt (size M) arrived 6 days ago, so it's
+        well within our 30-day free return window.  - **Return ID:** R-4417 - **Return
+        label:** Ready to print. I've emailed you the details.  Pack the shirt, put the
+        label on, and drop it off with the carrier. If you'd like a different size
+        instead, tell me and I can help with that.
+cost: $0.021560
 ```
 
-One run cost $0.020504 at the prices in the code.
+One run cost $0.02156 at the prices in the code.
 <!-- /skillii-kit:run act -->
