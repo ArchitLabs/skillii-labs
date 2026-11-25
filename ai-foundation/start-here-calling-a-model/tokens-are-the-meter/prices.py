@@ -1,10 +1,10 @@
-# Claude Opus 5.5 prices, in US dollars per million tokens, as of November 2026.
+# Claude Opus 5.5 prices, in US dollars per million tokens, as of 26 November 2026.
 # Source: https://platform.claude.com/docs/en/about-claude/pricing
 # Prices change. Check the page before you rely on these numbers.
 INPUT = 4.00
 OUTPUT = 20.00
 CACHE_WRITE = 5.00   # writing to the 5-minute cache
-CACHE_READ = 0.20    # a cache hit: 5% of the input price
+CACHE_READ = 0.20    # a cache hit
 
 
 def cost(input_tokens=0, output_tokens=0, cache_write=0, cache_read=0):
