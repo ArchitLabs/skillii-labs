@@ -74,9 +74,9 @@ One run cost $0.000154 at the prices in the code.
 Recorded run of `python again.py` (26 Nov 2026):
 
 ```text
-run 1: The robot opened the door and saw ...nothing but darkness. Its optical sensors whirred
-run 2: The robot opened the door and saw the girl standing there, drenched from head to toe
-run 3: The robot opened the door and saw nothing but fog. The fog was thick and cold,
+run 1: The robot opened the door and saw a small creature sitting on the porch, shivering
+run 2: The robot opened the door and saw something that made its processors freeze. Standing in the rain,
+run 3: The robot opened the door and saw something it had never seen before. A woman stood there
 cost: $0.000234
 ```
 
