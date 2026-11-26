@@ -1,5 +1,6 @@
 # Loss: one number for how wrong a model is. Training is the work of making that number smaller.
-# Plain Python: no library, no network, no key. The data is made up, and the output is the same on every run.
+# Plain Python: nothing to install, no network, no key. The data is made up, and the output is the same on every run.
+import time
 
 # data: three past deliveries (the distance in km, and the minutes each one took)
 km = [1, 5, 7]
@@ -21,6 +22,7 @@ for n in range(1, 101):
     slope = 2 * sum((w * x - y) * x for x, y in zip(km, minutes)) / len(km)  # which way is downhill
     w -= rate * slope
     now = loss(w)
+    time.sleep(0.5)  # a short pause, so each step prints on its own
     print(f"step {n}: loss {now:.2f}")
     if before - now < 0.01:  # it fell by less than 0.01: the loss has levelled off
         print(f"converged at step {n}: learned w = {w:.2f} minutes per km")
