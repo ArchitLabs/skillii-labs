@@ -12,8 +12,9 @@ As [Dive into Deep Learning](https://d2l.ai/chapter_introduction/index.html) put
 |---|---|---|
 | `four_ways.py` | Six made-up parcels and a short dispatch log, learned four ways. Supervised: from six labelled parcels it learns a weight cut and labels two new parcels. Unsupervised: with no labels, two-means clustering finds the same two groups. Reinforcement: with only a reward per try, it learns to send light parcels by bike and heavy ones by van. Self-supervised: it turns the log into (word, next word) pairs and learns which word comes next | free |
 
-The script uses only Python itself: no library, no network, no key. It creates nothing and leaves nothing to tidy
-up. The data never changes, so the output is the same on every run.
+The script uses only Python itself: nothing to install, no network, no key. It creates nothing and leaves nothing to
+tidy up. The data never changes, so the output is the same on every run. Each line is printed after a half-second
+pause, so you can read the output as it arrives.
 
 ## Run it
 
