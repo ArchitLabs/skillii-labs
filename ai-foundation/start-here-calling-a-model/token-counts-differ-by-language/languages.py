@@ -1,4 +1,4 @@
-# One sentence in four languages: how many tokens does each cost? Token counting is free.
+# One sentence in four languages: how many tokens does each cost?
 import anthropic
 
 client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY

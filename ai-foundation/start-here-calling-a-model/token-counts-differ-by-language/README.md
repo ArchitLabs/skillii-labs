@@ -15,7 +15,7 @@ the research papers the video cites measure many sentences.
 
 | Script | What it shows | Cost to run |
 |---|---|---|
-| `languages.py` | Characters, bytes and the tokens two models count for the same sentence in four languages | free (token counting is free to use) |
+| `languages.py` | Characters, bytes and the tokens two models count for the same sentence in four languages | free (Anthropic's Token counting page, read 26 Nov 2026, says token counting is free to use) |
 
 ## Run it
 
@@ -25,8 +25,9 @@ export ANTHROPIC_API_KEY=...   # your own key
 python languages.py
 ```
 
-Token counting is free, but it has its own requests-per-minute limit; the script makes eight requests.
-See [Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting).
+As of 26 November 2026, Anthropic's Token counting page says token counting is free to use, with its own
+requests-per-minute limit; the script makes eight requests. Check the page before you rely on this:
+[Token counting](https://platform.claude.com/docs/en/build-with-claude/token-counting).
 
 ## Recorded run
 
