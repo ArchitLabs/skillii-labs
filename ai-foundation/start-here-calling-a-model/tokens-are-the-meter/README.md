@@ -81,12 +81,12 @@ One run cost $0.020582 at the prices in the code.
 Recorded run of `python estimate.py` (26 Nov 2026):
 
 ```text
-one request: 179 output tokens, 3077 read from cache
+one request: 235 output tokens, 3091 read from cache
 requests a month: 44,000
-without caching: about $703 a month
-with caching:    about $189 a month
-cost: $0.009043
+without caching: about $755 a month
+with caching:    about $238 a month
+cost: $0.024905
 ```
 
-One run cost $0.009043 at the prices in the code.
+One run cost $0.024905 at the prices in the code.
 <!-- /skillii-kit:run estimate -->

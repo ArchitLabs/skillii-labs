@@ -1,5 +1,6 @@
 # What will it cost to run? Price one real request, then multiply it out to a month.
 # The token counts come from the API. The team's numbers below are yours to change.
+import time
 from pathlib import Path
 
 import anthropic
@@ -9,6 +10,7 @@ ENGINEERS, REQUESTS_PER_DAY, WORKDAYS = 50, 40, 22
 
 client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY
 guide = (Path(__file__).parent / "team-style-guide.md").read_text()
+guide = f"Loaded at {time.time()}\n" + guide  # a new first line: every run starts with an empty cache
 system = [{"type": "text", "text": guide, "cache_control": {"type": "ephemeral"}}]
 ask = [{"role": "user", "content": "Review this line in one sentence: x=1;y = 2"}]
 spent = 0
