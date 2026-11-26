@@ -10,10 +10,6 @@ def loss(w):  # the model guesses minutes = w * km; its loss is the mean of the 
     misses = [w * x - y for x, y in zip(km, minutes)]
     return sum(m * m for m in misses) / len(misses)
 
-# three guesses for w on the same data: the lower the loss, the better the fit
-for w in [2.0, 3.0, 3.5]:
-    print(f"guess w = {w}: loss {loss(w):.2f}")
-
 # training: start at w = 0, and step w downhill on the loss until the loss stops falling
 w, rate = 0.0, 0.01  # rate: how far each step moves w
 before = loss(w)
@@ -23,8 +19,8 @@ for n in range(1, 101):
     w -= rate * slope
     now = loss(w)
     time.sleep(0.5)  # a short pause, so each step prints on its own
-    print(f"step {n}: loss {now:.2f}")
     if before - now < 0.01:  # it fell by less than 0.01: the loss has levelled off
-        print(f"converged at step {n}: learned w = {w:.2f} minutes per km")
+        print(f"converged at step {n}: loss {now:.2f}, learned w = {w:.2f} minutes per km")
         break
+    print(f"step {n}: loss {now:.2f}")
     before = now
