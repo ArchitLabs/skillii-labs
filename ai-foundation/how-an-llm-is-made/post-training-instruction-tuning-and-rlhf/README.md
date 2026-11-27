@@ -11,7 +11,7 @@ lab runs all three steps at toy size.
 
 | Script | What it shows | Cost to run |
 |---|---|---|
-| `posttrain.py` | A tiny model that holds a score for each of four replies to one question, where each extra point doubles a reply's chance. After pre-training it most likely carries on with another question. Step 1, fine-tuning: seven answers written by people each raise their reply's score, so the model now mostly answers. Step 2, the reward model: people rank three replies, best first, and the reward model learns which words the better reply of each pair had, so it can score any reply, even one nobody ranked. Step 3, reinforcement learning: each reply's score moves by its reward, and the reply people ranked best becomes the likeliest | free |
+| `posttrain.py` | A tiny model that holds a score for each of four replies to one question, where each extra point doubles a reply's weight and its chance is that weight's share of the total. After pre-training it most likely carries on with another question. Step 1, fine-tuning: seven answers written by people each raise their reply's score, so the model now mostly answers. Step 2, the reward model: people rank three replies, best first, and the reward model learns which words the better reply of each pair had, so it can score any reply, even one nobody ranked. Step 3, reinforcement learning: each reply's score moves by its reward, and the reply people ranked best becomes the likeliest | free |
 
 The script uses only Python itself: nothing to install, no network, no key. It creates nothing and leaves nothing to
 tidy up. It is a toy that keeps the idea of each step, not how a real model is trained: a real model writes its

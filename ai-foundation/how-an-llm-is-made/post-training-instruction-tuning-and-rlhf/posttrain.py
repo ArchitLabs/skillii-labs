@@ -6,7 +6,7 @@ def show(line):  # print one line after a short pause, so each line appears on i
     time.sleep(0.5)
     print(line)
 
-# the model: a score for each reply it could give; each extra point doubles that reply's chance
+# the model: a score for each reply it could give; each extra point doubles that reply's weight
 prompt = "how do i make tea?"
 score = {"how do i make coffee?": 3, "boil water.": 0, "boil water, add the tea.": 0, "great question!": 1}
 
