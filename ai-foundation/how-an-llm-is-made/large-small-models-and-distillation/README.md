@@ -41,8 +41,8 @@ Recorded run of `python sizes.py` (27 Nov 2026):
 
 ```text
 task: label one support message as REFUND, DELIVERY or ACCOUNT
-small claude-haiku-5-5: DELIVERY in 0.7 s, 8 output tokens, $0.000010
-large claude-opus-5-5: DELIVERY in 1.3 s, 8 output tokens, $0.000392
+small claude-haiku-5-5: DELIVERY in 1.9 s, 8 output tokens, $0.000010
+large claude-opus-5-5: DELIVERY in 0.8 s, 8 output tokens, $0.000392
 same answer: yes
 the large model cost 40 times as much
 cost: $0.000402
